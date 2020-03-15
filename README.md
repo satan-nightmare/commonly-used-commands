@@ -7,6 +7,8 @@ pip install jupyterlab
 pip3 install jupyterlab
 ```
 
+Issues
+
 It requries log off then log on to get jupyterlab in path. If you want to use it immediatly, use `~/.local/bin/jupyter lab`
 
 Sometimes following error comes `Failed validating schema (@jupyterlab/apputils-extension:package`
@@ -19,3 +21,6 @@ To start: `jupyter lab --no-browser`
 
 To fix issue when wrong pyrhon interpreter is being used by jupyterlab
 Fix python interpreter path in `/home/<user>/.local/share/jupyter/kernels/python<2/3>/kernel.json`
+
+In windows's WSL, permission error is thrown when running from user directories e.g. Dowcuments, Music, etc.
+TO fix, either run jupyter from a linux directory e.g. `/home/<user>/<some path>` or from some manully made directory in windows drive 
