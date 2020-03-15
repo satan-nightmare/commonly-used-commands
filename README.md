@@ -16,3 +16,6 @@ Rebuilding jupyterlab will fix it
 Ref: https://stackoverflow.com/questions/57260338/what-is-a-failed-validating-schema-jupyterlab-apputils-extensionpackage-in
 
 To start: `jupyter lab --no-browser`
+
+To fix issue when wrong pyrhon interpreter is being used by jupyterlab
+Fix python interpreter path in `/home/<user>/.local/share/jupyter/kernels/python<2/3>/kernel.json`
