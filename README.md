@@ -28,3 +28,10 @@ Fix python interpreter path in `/home/<user>/.local/share/jupyter/kernels/python
 
 To fix, either run jupyter from a linux directory e.g. `/home/<user>/<some path>` or from some manully made directory in windows drive
 Ref: https://github.com/Microsoft/WSL/issues/3608
+
+## Virtual environment related issues
+
+1. When using fish shell, `source <env>/bin/activate` throws error
+
+Use following command instead `. <env>/bin/activate.fish`
+Ref: https://stackoverflow.com/questions/10956335/how-to-get-virtualenv-to-work-with-fish-shell
